@@ -1,0 +1,201 @@
+@media (min-width: 1440px) {
+  body {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    width: 99%;
+    overflow-x: hidden;
+  }
+  .app {
+    display: flex;
+    width: 75%;
+    width: 1440px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .app__header {
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: -10px;
+  }
+
+  #launchfont {
+    font-family: "East Sea Dokdo", cursive;
+    font-size: 78px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+  }
+  .app__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 1440px;
+  }
+  .app__body {
+    display: flex;
+    justify-content: space-between;
+    scrollbar-width: none;
+    width: 100%;
+  }
+
+  .app__filter {
+    flex: 0.2;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .app__cards {
+    flex: 0.8;
+    background-color: #f2f2f2;
+    margin-left: 30px;
+    width: 100%;
+  }
+
+  .app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 1440px) and (min-width: 1024px) {
+  body {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app__header {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 100%;
+  }
+  .app__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: -2%;
+  }
+  .app__body {
+    display: flex;
+    margin: 10px;
+    margin-top: 15px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .app__filter {
+    flex: 0.2;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .app__cards {
+    flex: 0.8;
+    background-color: #ffffff;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+}
+/* For Tablet View */
+
+@media (max-width: 1024px) and (min-width: 700px) {
+  body {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app__header {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 100%;
+  }
+  .app__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: -2%;
+  }
+  .app__body {
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .app__filter {
+    flex: 0.25;
+  }
+  .app__cards {
+    flex: 0.75;
+  }
+
+  .app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+}
+/* For Mobile View */
+@media (max-width: 700px) {
+  body {
+    background-color: #f2f2f2;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app__header {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: -15px;
+    width: 100%;
+    margin-bottom: -4%;
+    font-size: 24px;
+  }
+  .app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .app__body {
+    flex-direction: column;
+  }
+
+  .app__filter {
+    max-width: 99%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .app__cards {
+    max-width: 99%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+  }
+}

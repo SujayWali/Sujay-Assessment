@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Cards from "./Components/Card";
+import FilterPanel from "./Components/FilterPanel";
+import "./utils/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="app__header">
+        <h2 id="launchfont">SpaceX Launch Programs</h2>
+      </div>
+      <div className="app__content">
+        <div className="app__body">
+          <div className="app__filter">
+            <FilterPanel />
+          </div>
+          <div className="app__cards">
+            <Cards />
+          </div>
+        </div>
+        <div className="app__footer">
+          <h2>Assessment</h2>
+        </div>
+      </div>
     </div>
   );
 }

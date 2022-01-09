@@ -1,0 +1,74 @@
+.subPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: -4%;
+}
+.subPanel__header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-size: large;
+}
+.subPanel__title {
+  font-weight: 500;
+  padding: 0;
+  font-size: large;
+}
+.subPanel__title::after {
+  content: "";
+  height: 2px;
+  display: block;
+  position: relative;
+  top: 2px !important;
+  left: -10%;
+  right: auto;
+  max-width: 200px;
+  width: 120%;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+.subPanel__years {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+.button__container {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.year__button {
+  background-color: #c5df9d;
+  color: #000000;
+  border-radius: 4px;
+  margin-bottom: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.year__button__active {
+  background-color: #7aba02;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 700px) {
+  .subPanel__years {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 310px;
+  }
+}
